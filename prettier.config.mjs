@@ -1,0 +1,20 @@
+import sortImports from '@ianvs/prettier-plugin-sort-imports'
+
+/** @type {import('prettier').Config} */
+const config = {
+	arrowParens: 'always',
+	bracketSpacing: true,
+	printWidth: 120,
+	semi: false,
+	singleQuote: true,
+	useTabs: true,
+	endOfLine: 'lf',
+	trailingComma: 'es5',
+	plugins: [sortImports],
+	importOrder: ['<BUILTIN_MODULES>', '', '<THIRD_PARTY_MODULES>', '', '^@sofie-automation', '', '^[./]'],
+	importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
+	importOrderTypeScriptVersion: '5.7.0',
+	importOrderCaseSensitive: false,
+}
+
+export default config
