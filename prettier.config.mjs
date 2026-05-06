@@ -14,7 +14,6 @@ const config = {
 	importOrder: ['<BUILTIN_MODULES>', '', '<THIRD_PARTY_MODULES>', '', '^@sofie-automation', '', '^[./]'],
 	importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
 	importOrderTypeScriptVersion: '5.7.0',
-	importOrderCaseSensitive: false,
 }
 
 export default config
